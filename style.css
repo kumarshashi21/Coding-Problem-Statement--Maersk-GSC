@@ -1,0 +1,111 @@
+body{
+    background-color: #DCDCDC;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+main{
+    flex: auto;
+}
+main section{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    height: 100%;
+}
+.card-content-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex: 3;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+.card{
+    align-items: center;
+    display: flex;
+    font-size: 3rem;
+    flex: 0 0 33%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.card:before {
+    content: '';
+    display: table;
+    padding-top: 100%;
+  }
+.action-button-wrapper{
+    flex: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.action-button-wrapper button{
+    background-color: #2B8EAD;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    margin-bottom: 15px;
+}
+header, footer{
+    text-align: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 375px) {
+    body{
+        background-color: #fff;
+    }
+    main{
+        padding: 8px;
+    }
+    main section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .card-content-wrapper{
+        flex-direction: column;
+    }
+    .card{
+        height: 35px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-left: 5px solid;
+        flex: auto;
+        font-size: 24px;
+        color: #000000;
+        background-color: #DCDCDC;
+        margin-bottom: 5px;
+    }
+    .action-button-wrapper {
+        text-align: center;
+        flex-direction: row;
+        justify-content: space-around;
+        flex: 0;
+        margin-bottom: 5px;
+    }
+    .action-button-wrapper button{
+        width: 100px;
+    }
+}
