@@ -14,7 +14,7 @@ body{
     border: 1px solid #000;
 }
 main{
-    max-width: 938px;
+    max-width: 960px;
     width: 100%;
     margin: 0 auto;
     flex: auto;
